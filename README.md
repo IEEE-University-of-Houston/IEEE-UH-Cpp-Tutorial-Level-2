@@ -3,7 +3,7 @@ This tutorial is a full walkthrough of C++ starting from the main functions and 
 setup to run each .cpp file in a compiler of your choice. Below will be some ways to compile these files, and each file 
 will have a little description to explain what you are getting into. 
 
-# Compilers
+## Compilers
 There are a few options with compiling being online or a downloaded compiler. 
 
 Recommended for beginners: Dev C++
@@ -21,3 +21,13 @@ Here are some websites that have online compilers:
 <br/>-OnlineGDB https://www.onlinegdb.com/online_c++_compiler
 <br/>-CodeChef(Make sure it's set to C++) https://www.codechef.com/ide 
 <br/>-C++ Shell http://cpp.sh/ 
+
+## Lessons 
+Each lesson is separated into a file, and at the top it mentions what lesson(s) the file contains. These are the lesson included:
+1. Hello World and Basics
+2. Data Types
+3. Operators and Precedence
+4. If statements and Loops
+5. Inputs and Arrays (In progress)
+6. Nested if statements and Matrices (Future)
+7. Pointers (Future)
