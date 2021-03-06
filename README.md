@@ -15,7 +15,7 @@ The installation is a little more difficult and up keep is harder too, but it ha
 and looks nicer than Dev C++.
 Here is the link to download(get the free version): https://visualstudio.microsoft.com/downloads/
 
-If you do not want to download or cannot download a compiler there are online options. To do this, you have to download the .cpp and open them in the notepad. Open it and copy and paste it into the compiler and press "Run"
+If you do not want to download or cannot download a compiler there are online options. To do this, you have to download the .cpp file and open it in notepad. Once opened, copy and paste it into the compiler and press "Run"
 
 Here are some websites that have online compilers:
 <br/>-OnlineGDB https://www.onlinegdb.com/online_c++_compiler
