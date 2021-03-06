@@ -23,7 +23,7 @@ Here are some websites that have online compilers:
 <br/>-C++ Shell http://cpp.sh/ 
 
 ## Lessons 
-Each lesson is separated into a file, and at the top it mentions what lesson(s) the file contains. These are the lesson included:
+Each lesson is separated into a file, and at the top it mentions what lesson(s) the file contains. These are the lessons included:
 1. Hello World and Basics
 2. Data Types
 3. Operators and Precedence
