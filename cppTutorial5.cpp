@@ -52,7 +52,18 @@ int main(){
     cin >> b;
     cout << "You input " << b << endl << endl;
     
+    //If you're comfortable with these was of input, you can 
+    //comment lines 28-53, so you don't have to type in the numbers
+    //repeatedly. This is only an option, not doing so will not affect
+    //the rest of the code. It will only make reading future outputs 
+    //easier.
     
+    //For now, we are just going to assume that users will put in
+    //the correct data type when prompted (that includes you)
+    //Future programs will include ways to check to see if the 
+    //input is really what you wanted.
+
+
 
 
     
