@@ -32,6 +32,29 @@ int main(){
     
     //You can input any data type into its proper variable 
     
+    string str;
+    cout << "Input a string: ";
+    cin >> str;
+    cout << "You input " << str << endl << endl;
+
+    double num;
+    cout << "Input a double: ";
+    cin >> num;
+    cout << "You input " << num << endl << endl;
+
+    char c;
+    cout << "Input a character: ";
+    cin >> c;
+    cout << "You input " << c << endl << endl;
+
+    bool b;
+    cout <<"Input a boolean(1 for true/0 for false): ";
+    cin >> b;
+    cout << "You input " << b << endl << endl;
+    
+    
+
+
     
     return 0;
 }
