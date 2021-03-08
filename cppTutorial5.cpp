@@ -30,7 +30,8 @@ int main(){
     cin >> x;                                   //Wait for input
     cout << "You input " << x << endl << endl;  //Output to show the right input
     
-    //You can input
+    //You can input any data type into its proper variable 
+    
     
     return 0;
 }
