@@ -51,6 +51,13 @@ int main(){
     cout <<"Input a boolean(1 for true/0 for false): ";
     cin >> b;
     cout << "You input " << b << endl << endl;
+
+    //You can also do multiple in a row
+    /*
+    int num1, num2;
+    cin >> num1 >> num2;
+    //The user will input num1 then num2
+    */
     
     //If you're comfortable with these was of input, you can 
     //comment lines 28-53, so you don't have to type in the numbers
@@ -63,7 +70,9 @@ int main(){
     //Future programs will include ways to check to see if the 
     //input is really what you wanted.
 
+    //////////////////////////////////////////////////////////////////////////////////
 
+    
 
 
     
