@@ -48,7 +48,7 @@ int main(){
     cout << "You input " << c << endl << endl;
 
     bool b;
-    cout <<"Input a boolean(1 for true/0 for false): ";
+    cout <<"Input a boolean value(1 for true/0 for false): ";
     cin >> b;
     cout << "You input " << b << endl << endl;
 
