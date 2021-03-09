@@ -72,7 +72,39 @@ int main(){
 
     //////////////////////////////////////////////////////////////////////////////////
 
-    
+    /*****************************************************************
+     * Arrays are able to hold multiple values of a single data type 
+     * at once. They are common to use in a variety of programming 
+     * problems because of their ability to hold so much. They are 
+     * easy to go through one by one and still easy to change each 
+     * value. 
+     * 
+     * The way arrays work is that the address of their first value
+     * is stored into the variable that you created. From there, you 
+     * can access the rest by choosing the number of the element you
+     * want. This will make more sense with an example. The second 
+     * way to access values is using pointers, but that will be saved
+     * for the full lesson on pointers.
+     * 
+     * Here is how to initialize an array of integers with 5 values:
+     * int array[5];
+     * Now we can access each of those numbers individually but there
+     * is an extremely important way to do so.
+     * ARRAYS START INDEXING AT 0 IN C++
+     * So in this array of five elements, we can access the parts using
+     * 0-4. This scheme can be generalized as in an array of N numbers,
+     * You can use the numbers 0 - N-1 to pick/set a number.
+     * With that initialized, we can access each number like this:
+     * 
+     * array[0] = 0;
+     * array[1] = 1;
+     * array[2] = 2;
+     * array[3] = 3;
+     * array[4] = 4;
+     * 
+     * As you can see, this bracket notation makes each element act
+     * like any variable we've seen before, so we'll use them as such.
+    *****************************************************************/
 
 
     
