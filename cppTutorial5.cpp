@@ -217,6 +217,8 @@ int main(){
      * December has 31 days.
      * 
      * Possible Solution will be included in "ProblemSolutions.txt"
+     * For a challenge try using user input to add all the months 
+     * and numbers into the arrays for the same output. 
     *****************************************************************/
 
     return 0;
