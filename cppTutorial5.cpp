@@ -1,7 +1,7 @@
 /*****************************************************************
  *
  *  Filename:       - cppTutorial5.cpp
- *  Last Modified:  - Jan 11, 2021
+ *  Last Modified:  - Marhc 10, 2021
  *  Author:         - Alex Howell
  *  Description:    - Input and arrays
  * 
@@ -106,7 +106,118 @@ int main(){
      * like any variable we've seen before, so we'll use them as such.
     *****************************************************************/
 
+    //Now let's actually see it in action
+    int array[5];
+    array[0] = 0;
+    array[1] = 1;
+    array[2] = 2;
+    array[3] = 3;
+    array[4] = 4;
+    //Now every element in the array has a value assigned to it
 
-    
+    //We can use for loops to print out every value in an array
+    cout << "Print out array: \n";
+    for(int i = 0; i < 5; i++){
+        cout << array[i] << " "; 
+        //Make sure i is in the bracket because that is what's 
+        //changing each iteration
+        //The condition is important to see because if i >= 5
+        //for this array, then an error will occur because 
+        //array[5] doesn't exist
+    }
+    cout << endl << endl;
+
+    //We can also input values into an array using a for loop
+    int array2[5];
+    cout << "Fill in array2: " << endl;
+    for(int i = 0; i < 5; i++){
+        cout << "array[" << i << "] = ";
+        cin >> array[i];
+    }
+    cout << endl;
+    //This makes taking in larger amounts from values easier to keep 
+    //track of and faster than going one by one
+
+    //There is one more way to fill an array, but it not that common
+    //This is being shown just to make sure you're aware of the option
+    //Like everything in programming, there will be a case when this 
+    //will be useful
+
+    int array3[5] = {1, 2, 3, 4, 5};
+
+    /*****************************************************************
+     * The previously shown way to initialize arrays is that static
+     * way. The size is predetermined and then values are assigned.
+     * Another way to determined how big the array is to dynamically
+     * create it. This means the size is determined during runtime.
+     * The syntax for this is a little complicated for this point in
+     * the tutorial but that doesn't mean it can't be used. Using 
+     * fancy terminology, creating an array dynamically allocates
+     * memory based on the data type and size during runtime. Because
+     * of this, you will have to free the memory you took. You 
+     * will need a pointer and it will be created like an object
+     * which will be shown later. Again, the syntax doesn't have
+     * to make a lot of sense yet, but it's good to see the options
+     * for arrays at the same time(at least I think). Just be careful
+     * how big you make these arrays. Making the number too big will 
+     * cause performance issues. Worst comes to worst, try restarting
+     * your computing if you think it is acting weird after a big 
+     * number. To be safe keep it under 50. 
+    *****************************************************************/
+
+    //Here is the syntax for dynamically allocated array
+    //int *arr = new int[5];
+    //    ^there is the pointer part
+    //To free the memory:
+    //delete [] arr;
+
+    //Real-time test:
+    int size;
+    cout << "Enter a small size for the dynamically allocated array: ";
+    cin >> size;
+    int *arr = new int[size];
+    //Now you have an array of your choice of size
+
+    //Now to fill it like a normal array
+    for(int i = 0; i < size; i++){
+        arr[i] = i;
+    }
+
+    //Now to free the memory
+    delete [] arr;
+
+    //You can do this with any data type, all you have to si replace int
+    //from the example with what you want
+    //For another example
+    //double *arrDouble = new double[3];
+
+    //I'd recommend at this to mess around with what you learned to see 
+    //what you learned in use
+    //If you need a problem to try out, here is one:
+    /*****************************************************************
+     *                      Practice Problem
+     * Create two static arrays, one holds the name of every month
+     * (hint: use string data type) and the other should hold how
+     * many days the corresponding month has. Output statements
+     * saying how many days are in each month.
+     * Do this using a for loop and a generalized cout statement.
+     * 
+     * The output should be:
+     * January has 31 days.
+     * February has 28 days.
+     * March has 31 days.
+     * April has 30 days.
+     * May has 31 days.
+     * June has 30 days.
+     * July has 31 days.
+     * August has 31 days.
+     * September has 30 days.
+     * October has 31 days.
+     * November has 30 days.
+     * December has 31 days.
+     * 
+     * Possible Solution will be included in "ProblemSolutions.txt"
+    *****************************************************************/
+
     return 0;
 }
