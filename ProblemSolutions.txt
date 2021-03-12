@@ -7,3 +7,16 @@ for(int i = 0; i < 12; i++){
     cout << months[i] << " has " << days[i] << " days." << endl;
 }
 
+Tutorial 6 Practice Problem:
+
+int multipTable[12][12];
+int sum = 0;
+for(int i = 0; i < 12; i++){
+    for(int j = 0; j < 12; j++){
+        multipTable[i][j] = (i+1) * (j+1);
+        sum = sum + multipTable[i][j];
+        cout << multipTable[i][j] << " ";
+    }
+    cout << endl;
+}
+cout << "Sum = " << sum << endl;
