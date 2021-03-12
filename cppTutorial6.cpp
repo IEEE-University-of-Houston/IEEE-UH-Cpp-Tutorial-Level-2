@@ -52,6 +52,7 @@ int main(){
             cout << "i = " << i << ", j = " << j << endl;
         }
     }
+    cout << endl;
     //From the output after compiling, you can see how it works and the loops
     //iterate but I will write out another way to see it 
     /*****************************************************************
@@ -86,6 +87,37 @@ int main(){
      * i=3
      * i < 3 is false
      * exit for loops 
+     * 
+    *****************************************************************/
+    //I would suggest messing with the example to understand it more
+    //but this is the basic logic behind for loops
+
+    /*****************************************************************
+     *
+     * 2D arrays or matrices have many uses especially for maintaining 
+     * large amounts of data. These are not very different from arrays
+     * in the way that they are initialized and values are given to
+     * them. They also work in a similar way. The way matrices are
+     * stored is that it is basically an array of addresses pointing
+     * to the first value of every row. 
+     * 
+     * The way to initialize them is like this:
+     * int matrix[3][3];
+     * Here is a matrix of size 3x3 and inputting values works
+     * similarly to arrays.
+     * matrix[0][0] = 0;
+     * matrix[0][1] = 0;
+     * matrix[0][2] = 0;
+     * matrix[1][0] = 0;
+     * matrix[1][1] = 0;
+     * matrix[1][2] = 0;
+     * matrix[2][0] = 0;
+     * matrix[2][1] = 0;
+     * matrix[2][2] = 0;
+     * 
+     * Again, indexing starts at zero and goes to size-1. The bracket
+     * notation is still the easiest way to access indivialual 
+     * elements in the array.
      * 
     *****************************************************************/
 
