@@ -29,5 +29,5 @@ Each lesson is separated into a file, and at the top it mentions what lesson(s) 
 3. Operators and Precedence
 4. If statements and Loops
 5. Inputs and Arrays
-6. Nested if statements/loops and Matrices (In progress)
+6. Nested if statements/loops and Matrices
 7. Pointers (Future)
