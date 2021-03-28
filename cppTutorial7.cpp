@@ -85,6 +85,7 @@ int main(){
     cout << "doub has the value of: " << *doublePtr << endl;
     cout << "c is at address: " << (void *) charPtr << endl;
     cout << "c has the value of: " << *charPtr << endl;
+    cout << endl;
     //(void *) needs to be in front of the character pointer 
     //because cout is reading it as a string since strings are
     //just character arrays
@@ -97,7 +98,7 @@ int main(){
     //Well, there's a little more to it
     int *numPointer = new int;
     *numPointer = 256;
-    cout << "numPointer = " << *numPointer << endl;
+    cout << "numPointer = " << *numPointer << endl << endl;
     //Using the "new" keyword asks for the space needed by the
     //data type and keeps it until it needs to be used BUT
     //anytime "new" is used the memory needs to be freed to
@@ -109,6 +110,32 @@ int main(){
 
     //We can do the same notation will arrays
     int *array = new int[4];
-    
+    //Then we can use it like normal arrays
+    //But guess what! There is another way to read from arrays!
+    //Exciting isn't it!
+    //Anyway, we can manipulate pointer's address to get different
+    //Values from the array. Of course there is a catch. You should
+    //NEVER EVER use the original array pointer to do so because
+    //you can lose the array completely and not be able to read from
+    //it anymore. So all you need to do is make a temporary pointer
+    //then this temporary pointer can do whatever and it's ok 
+    //because you never lose the originally array
+    //Let's try it
+    int *temp = array; 
+    //We don't need to dereference anything because we only care
+    //about the address, and here we set a pointer equal to an
+    //address so it works out.
+    for(int i = 0; i < 4; i++){
+        *(temp+i) = i * 2;
+    }
+    //So know this may crazy but it not's crazy in concept
+    //Basically by adding to the address you can move through the
+    //array like you usually do just without the bracket notation
+    //So temp+0 is just temp[0] and so on
+    //And just to prove that it works, we'll print out a value
+    cout << "Check for number is array: " << array[3] << endl << endl;
+
+
+    delete [] array;
     return 0;
 }
