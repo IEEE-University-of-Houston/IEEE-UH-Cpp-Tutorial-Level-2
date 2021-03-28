@@ -1,7 +1,7 @@
 /*****************************************************************
  *
  *  Filename:       - cppTutorial6.cpp
- *  Last Modified:  - Marhc 11, 2021
+ *  Last Modified:  - March 11, 2021
  *  Author:         - Alex Howell
  *  Description:    - Nested if statements/loops and Matrices
  * 
