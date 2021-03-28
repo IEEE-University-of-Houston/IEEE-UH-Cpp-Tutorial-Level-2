@@ -10,6 +10,10 @@
 #include <iostream>
 using namespace std;
 
+//Pass by reference examples
+void num10(int &x);
+void num20(int *&x);
+
 int main(){
 
     /*****************************************************************
@@ -134,8 +138,78 @@ int main(){
     //So temp+0 is just temp[0] and so on
     //And just to prove that it works, we'll print out a value
     cout << "Check for number is array: " << array[3] << endl << endl;
-
-
+    //Don't forget to free the memory
     delete [] array;
-    return 0;
+
+    //Now user defined functions get a little more complicated because
+    //the pointer behavior is different when it's between the main 
+    //function and another function. But first we need to learn to 
+    //pass by reference
+
+    /*****************************************************************
+     *
+     *  Passing by reference means that the variable you put into
+     * a function changes without having to return it. 
+     * For example:
+     * x = 0
+     * f(x){
+     *  x = 2; 
+     * }
+     * cout << x; // 2
+     * Now this is NOT the code to do it but an over simplified
+     * version but a way to kind of see it
+     * 
+     * Now the notation in a function uses "&" so let's not get this
+     * confused with addressing 
+     * Here is an example of a function ID
+     * void funct(int &x){}
+     * So now whatever arguement we use for this function will
+     * change when we change x 
+     * 
+    *****************************************************************/
+    //Let's see a quick example
+    int z = 0;
+    num10(z); // Function is shown below, but any int put in turns to 10
+    cout << "z = " << z << endl;
+    //Now we know how to pass by reference
+    //The same can be done with pointers
+    int *zz = new int;
+    num20(zz);
+    cout << "zz = " << *zz << endl << endl;
+    delete zz;
+    //There is another way to change a pointer in a function by using a double pointer
+    //But that is not super important but the notation would be as follows
+    //void func(int **x){*x = new int; **x = 2;}
+    //int *y; func(&y); //y will equal 2
+
+    //The last thing is how to dynamically allocate matrices
+    //We get to use a double pointer because matrices are basically an array of pointers
+    //to other arrays, so we get to point to pointers
+    //First we need to allocate our number of rows
+    int **matrix = new int*[4];
+    //Note the apostraphe because we're making an array of int pointers
+    //Then we need to set each of these with how many rows we need
+    for(int i = 0; i < 4; i++){
+        *matrix = new int[6];
+    }
+    //Now we have a 4x6 matrix
+    //You can access the elements like before
+    //Now that we requested memory, we need to free it
+    //To do that we need to delete it the opposite way that we created it 
+    //Or else we lose the pointers to the columns and we have no way to 
+    //access it
+    for(int i = 0; i < 4; i++){
+        delete [] matrix[i];
+    }
+    //Then we can delete the rows
+    delete [] matrix;
+}
+
+//Pass by reference example functions
+void num10(int &x){
+    x = 10;
+}
+
+void num20(int *&x){
+    *x = 20;
 }
