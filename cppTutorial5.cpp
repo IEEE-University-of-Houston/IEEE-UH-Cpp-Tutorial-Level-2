@@ -1,7 +1,7 @@
 /*****************************************************************
  *
  *  Filename:       - cppTutorial5.cpp
- *  Last Modified:  - Marhc 10, 2021
+ *  Last Modified:  - March 10, 2021
  *  Author:         - Alex Howell
  *  Description:    - Input and arrays
  * 
